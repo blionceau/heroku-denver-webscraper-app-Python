@@ -2,7 +2,7 @@
 An application to scrape data of foreclosures  in Denver county, Colorado, USA.
 
 - This application daily scrapes https://www.denvergov.org/ForeclosurePortal/Home.aspx/Search (i.e., the website for foreclosures in Denver county, colorado, USA).
-- Heroku job scheduler is set to run at 7:00 am. Besides, an APScheduler can also be considered. Thus, an automated email notification with an attachment in the csv file is daily sent to a specified receiver's email address. The recipient should have a MailGun account.
+- Heroku job scheduler is set to run at 7:00 am. Besides, an APScheduler can also be considered. Thus, an automated email notification with an attachment in the CSV file is daily sent to a specified receiver's email address. The recipient should have a MailGun account.
 - Mongodb is used to store the data.
 - The user can change the search window by changing the variable _period which is already set as 2 by default(e.g., _period = 2, the search will be done between today and yesterday).
 
