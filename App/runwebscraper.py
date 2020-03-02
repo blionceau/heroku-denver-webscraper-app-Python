@@ -666,12 +666,12 @@ class MailGunLogIn :
     Login credentials of mailgun and mongodb
     
     gmail:
-    API key: e43863f6f950e65656f71f2d8ecef282-0a4b0c40-8738a219
-    API base URL: https://api.mailgun.net/v3/sandbox521de35fd40143579448adb42b06638f.mailgun.org
+    API key: 
+    API base URL: 
     yahoo:
-    sandbox = "sandbox939c856840e749ef87e6c3b0ddf6a451.mailgun.org" # sandbox for yahoo
-    requests_msg_url = "https://api.mailgun.net/v3/{0}/messages".format(sandbox)
-    key = "84547e37808b86f2c9720c3449648810-0a4b0c40-75545a1a" # API KEY for yahoo mail
+    sandbox = "" # sandbox for yahoo
+    requests_msg_url = "".format(sandbox)
+    key = "" # API KEY for yahoo mail
 
     '''
     def __init__(self):
@@ -679,11 +679,11 @@ class MailGunLogIn :
         Constructor
         '''
     #-------------- mailgun -----------------------------
-        self.sandbox = "sandbox939c856840e749ef87e6c3b0ddf6a451.mailgun.org"  # sandbox for yahoo
-        self.requests_msg_url = "https://api.mailgun.net/v3/{0}/messages".format(self.sandbox)
-        self.key = "84547e37808b86f2c9720c3449648810-0a4b0c40-75545a1a"  # API KEY for yahoo mail
-        self.sender = "Ian Denver County <denverforeclosures20@gmail.com>"
-        self.recipient = "Ian <denverforeclosures20@yahoo.com>"
+        self.sandbox = ""  # sandbox for yahoo
+        self.requests_msg_url = "".format(self.sandbox)
+        self.key = ""  # API KEY for yahoo mail
+        self.sender = "
+        self.recipient = ""
         self.subject = "Denver Foreclosures Notification"     
 # denverforeclosures20@yahoo.com
     # getters
@@ -707,9 +707,9 @@ class MongodbLogIn:
         Constructor
         '''
         #-------------- mongodb -----------------------------
-        self.username = 'denverforeclosures'
-        self.password = 'ECHOX00C5'
-        self.db = 'denver-6piz2.mongodb.net/test?retryWrites=true&w=majority' 
+        self.username = ''
+        self.password = ''
+        self.db = '' 
         self.cluster_name = 'denver_search'
         self.collection_name = 'daily_data'
         
@@ -798,9 +798,9 @@ class MongoDB:
     
     def _connect_mongo(self):
         """ A util for making a connection to mongo_db
-        <username>: denverforeclosures
-        <password>: ECHOC00C5
-        <database>: denver-6piz2.mongodb.net/test?retryWrites=true&w=majority
+        <username>: 
+        <password>: 
+        <database>: 
         
         mongodb+srv://<username>:<password>@<database>
         """
